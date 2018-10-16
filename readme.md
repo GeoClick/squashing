@@ -4,7 +4,7 @@ What happens when we squash a Gaussian Process? The beauty of the GP lies in its
 # Were we to expect this behavior?
 In the weeks preceding this project, my laptop broke. That left me with lots of time to think hard about the outcome before I could throw Monte Carlo at it. Here we will explore my reasoning. 
 
-For this reasoning, we will use [Jensen's inequality](https://en.wikipedia.org/wiki/Jensen%27s_inequality). One will find many forms of Jensen's inequality online. The most consice version, imo, being "the mean of a convex function lies below the convex function of the mean". In math <img src="https://rawgit.com/RobRomijnders/squashing/master/svgs/01bcf9c4aa3a054c7555013715dd285d.svg?invert_in_darkmode" align=middle width=140.905875pt height=24.56552999999997pt/>.
+For this reasoning, we will use [Jensen's inequality](https://en.wikipedia.org/wiki/Jensen%27s_inequality). One will find many forms of Jensen's inequality online. The most consice version, imo, being "the mean of a convex function lies below the convex function of the mean". In math <img src="https://github.com/RobRomijnders/squashing/blob/master/svgs/01bcf9c4aa3a054c7555013715dd285d.svg?raw=true" align=middle width=140.905875pt height=24.56552999999997pt/>.
 
 Now let us compare the mean of the squashed function with the squashed function of the mean. Our squashing function is the logistic function, <img src="https://rawgit.com/RobRomijnders/squashing/master/svgs/bccf253d5eabc9c746afee392f973abd.svg?invert_in_darkmode" align=middle width=83.9091pt height=26.70657pt/>. On the domain with positive inputs, this function is concave. On the domain with negative inputs, this function is convex.
 
@@ -16,7 +16,7 @@ Therefore
 
 # Results
 The following figure displays our results:
-![squashing](www.google.com)
+![squashing](https://github.com/RobRomijnders/squashing/blob/master/squash_squash_squash.png?raw=true)
 
   * In all figures the dark brown indicates the posterior mean, the blue shading indicates the two sigma confidence interval.
   * Upper left: This diagram displays samples from a GP. No squashing yet.
